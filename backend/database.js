@@ -1,14 +1,8 @@
 // database.js
 const sqlite3 = require('sqlite3').verbose();
 
-const path = require('path');
-// Render's persistent disk will be mounted at /data.
-// We'll use a local file for development.
-const dbPath = process.env.NODE_ENV === 'production' 
-  ? path.join('/data', 'contacts.db') 
-  : 'contacts.db';
-
-const DBSOURCE = dbPath;
+// Use ':memory:' for an in-memory database or a file path for a persistent one.
+const DBSOURCE = "contacts.db";
 
 const db = new sqlite3.Database(DBSOURCE, (err) => {
     if (err) {
