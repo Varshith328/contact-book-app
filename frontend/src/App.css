@@ -1,0 +1,166 @@
+/* App.css */
+.app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.app-header {
+  text-align: center;
+  color: #005a9c;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #005a9c;
+  padding-bottom: 1rem;
+}
+
+/* Form Styling */
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Important for padding and width */
+}
+
+.form-group .error {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact List Styling */
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-item {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  flex-grow: 1;
+}
+
+.contact-details span {
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.contact-details .name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.contact-details .email, .contact-details .phone {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Pagination Styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+/* Loading and Messages */
+.centered-message {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 0.5rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-btn {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
